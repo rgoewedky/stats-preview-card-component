@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+
+html,
+body {
+  margin: 0;
+  font-size: 16px;
+
+}
+
+body {
+ 
+  height: 100vh;
+  width: 100vw;
+  background-color: hsl(233, 47%, 7%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+
+span{
+  color: hsl(277, 64%, 61%);
+}
+
+.card {
+  margin: 0 5%;
+  background-color: hsl(244, 38%, 16%);
+  display: flex;
+  flex-direction: row;
+  border-radius: 5px;
+  margin-bottom: 5px;
+  font-family: monospace;
+}
+
+.content {
+  width: 100%;
+  height: 100%;
+}
+
+.text {
+  padding: 1%;
+  align-items: center;
+}
+
+.inside-text{
+  position: relative;
+  height: 60%;
+  width: 80%;
+  top: 9%;
+  margin: 0 auto;
+  /*border: 1px solid red;*/
+  padding: 5%;
+}
+
+.img {
+  width: 100%;
+  filter: contrast(0.85) sepia(79%) hue-rotate(225deg) brightness(0.4) saturate(600%);
+}
+
+h1{
+  margin: 0;
+  color: hsl(0, 0, 100%);
+}
+
+.image {
+  width: 100%;
+  height: 100%;
+  border-radius: 0 5px 5px 0;
+  object-fit: cover;
+}
+
+.attribution {
+  font-family: Lexend Deca, monospace;
+  color: white;
+  font-size: 1rem;
+  /*border: 1px solid white;*/
+  padding: 1%;
+}
+
+.attribution a {
+  
+  color:  hsl(277, 64%, 61%);
+  text-decoration: none;
+}
+
+.heading{
+  font-size: 45px;
+  color: hsl(0,0%,100%);
+ font-family: Inter, monospace;
+
+}
+
+.small-heading{
+ font-size: 30px;
+}
+
+.paragraph{
+  font-size: 1.15rem;
+  line-height: 1.7;
+  color: hsla(0, 0%, 100%, 0.75);
+  font-family: Lexend Deca, monospace;
+  font-weight: 400;
+
+  /*border: 1px solid red;*/
+}
+
+.stats{
+  display: flex;
+  flex-direction: row;
+ /* border: 1px solid red;*/
+  justify-content: space-between;
+  padding: 5% 2% 5% 0;
+}
+
+.descp{
+  font-size: 1rem;
+  color: hsla(0, 0%, 100%, 0.6);
+  font-weight: 400;
+   font-family: Lexend Deca, monospace;
+}
+
+@media(max-width: 975px){
+  .stats{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .items{
+    padding: 3%;
+  }
+
+  .card{
+
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .image {
+  width: 100%;
+  height: 100%;
+  border-radius: 5px 5px 0 0;
+  object-fit: cover;
+}
+
+}
